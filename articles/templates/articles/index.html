@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Document{% endblock  %}
+
+{% block content %}
+Index page
+<p>{{ apple }}</p>
+<a href="/articles/new/">게시글 작성하기</a>
+{% for article in articles %}
+<p>{{ article }}</p>
+
+{% endfor %}
+{% endblock %}
